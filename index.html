@@ -60,7 +60,6 @@
 
     
     <section id="hero" class="hero section light-background">
-
       <div class="container">
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -79,6 +78,7 @@
         </div>
       </div>
     </section>
+    
 
     <section id="news" class="news section light-background">
       <div class="container section-title" data-aos="fade-up">
@@ -432,40 +432,48 @@
  
   <style>
     .image-slider {
-  position: relative;
-  height: 100%;
-}
-
-.image-slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  width: 100%;
-  animation: float 3s ease-in-out infinite;
-}
-
-.hero-img .image-slider img {
-  max-height: 450px;
-  height: auto;
-  width: auto;
-}
-
-
-.image-slider img.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-    </style>
+      position: relative;
+      height: 100%;
+    }
+  
+    .image-slider img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      width: 100%;
+      animation: float 3s ease-in-out infinite;
+    }
+  
+    .hero-img .image-slider img {
+      max-height: 450px;
+      height: auto;
+      width: auto;
+    }
+  
+    .image-slider img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+  
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  
+    /* Cambiar el orden de los elementos en pantallas pequeñas (móviles) */
+    @media (max-width: 767px) {
+      .hero .row {
+        flex-direction: column-reverse; /* Coloca la imagen debajo del texto en móviles */
+      }
+  
+      .hero-img .image-slider img {
+        max-height: 300px; /* Ajusta la altura de la imagen en móviles para evitar que ocupe demasiado espacio */
+      }
+    }
+  </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
