@@ -463,17 +463,29 @@
       100% { transform: translateY(0px); }
     }
   
-    /* Cambiar el orden de los elementos en pantallas pequeñas (móviles) */
+    /* Móviles */
     @media (max-width: 767px) {
       .hero .row {
-        flex-direction: column-reverse; /* Coloca la imagen debajo del texto en móviles */
+        flex-direction: column-reverse;
+      }
+  
+      .hero-img .image-slider {
+        position: relative;
+        height: auto;
+        padding-bottom: 65vw; /* Más pequeño que antes (antes era 70vw) */
+        overflow: visible;
       }
   
       .hero-img .image-slider img {
-        max-height: 300px; /* Ajusta la altura de la imagen en móviles para evitar que ocupe demasiado espacio */
+        max-height: none;
+        height: auto;
+        width: 80%; /* Más estrecho */
+        margin: 0 auto; /* Centrado horizontal */
+        object-fit: contain;
       }
     }
   </style>
+  
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
