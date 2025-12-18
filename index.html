@@ -1,527 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>GlutenZero</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlutenZero · Restaurantes sin gluten cerca de ti</title>
+<link href="assets/img/ICONO.jpg" rel="icon">
+<link href="assets/img/ICONO.jpg" rel="apple-touch-icon">
+<meta name="description" content="GlutenZero es la plataforma líder para encontrar restaurantes 100% seguros para celíacos, con menús verificados y compra de productos sin gluten.">
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link href="assets/img/ICONO.jpg" rel="icon">
-  <link href="assets/img/ICONO.jpg" rel="apple-touch-icon">
-
-  
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  
-  <link href="assets/css/main.css" rel="stylesheet">
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#22c55e',
+          secondary: '#16a34a',
+          dark: '#0f172a',
+          lightgray: '#f8f9fa'
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+  .fade-up.show { opacity: 1; transform: translateY(0); }
+</style>
 </head>
+<body class="bg-white text-slate-800 font-[Inter] antialiased">
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/GlutenZero_noSlogan.jpg">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Sobre el proyecto<br></a></li>
-          <li><a href="#news">Noticias</a></li>
-          <li><a href="#about">Restaurantes asociados</a></li>
-          <li><a href="#encuesta">Encuesta</a></li>
-          <li><a href="#contact">Contáctanos</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="#contact">Apúntate a la lista</a>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    
-    <section id="hero" class="hero section light-background">
-      <div class="container">
-        <div class="row gy-4 justify-content-center justify-content-lg-between">
-          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">¿Qué es GlutenZero?</h1>
-            <p data-aos="fade-up" data-aos-delay="100">GlutenZero es una start-up que pretende construir una plataforma web especializada para los celíacos que ofrece restaurantes cercanos empleando geolocalización.<br />Los restaurantes afiliados publican sus menús sin gluten, especificando qué ingredientes se han empleado para cada plato.</p>
-          </div>
-          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <div class="image-slider">
-              <img src="assets/img/hero-img.png" class="img-fluid slide animated active" alt="Imagen 1">
-              <img src="assets/img/menu/menu-item-2.png" class="img-fluid slide animated" alt="Imagen 2">
-              <img src="assets/img/menu/menu-item-4.png" class="img-fluid slide animated" alt="Imagen 3">
-              <img src="assets/img/menu/menu-item-5.png" class="img-fluid slide animated" alt="Imagen 4">
-              <img src="assets/img/menu/menu-item-6.png" class="img-fluid slide animated" alt="Imagen 5">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <section id="news" class="news section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Noticias</h2>
-        <p>GlutenZero en los <span class="description-title">medios</span></p>
-      </div>
-    
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm h-100 d-flex flex-column">
-              <img src="assets/img/Maraton.png" class="card-img-top" alt="GlutenZero en la maratón de startups de la UMH" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column flex-grow-1">
-                <h5 class="card-title">GlutenZero: Los comienzos de una start up alicantina que busca proporcionar alternativas sin gluten.</h5>
-                <p class="card-text flex-grow-1">Un artículo en el que se menciona cómo GlutenZero llegó a ser una startup finalista de entre más de 60 proyectos en la competición de la Universidad Miguel Hernandez (Elche).</p>
-                <a href="https://comunicacion.umh.es/2024/01/26/ganadores-de-la-primera-fase-de-la-13a-maraton-de-creacion-de-start-ups-umh/" class="btn btn-primary mt-auto" target="_blank">Leer más</a>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm h-100 d-flex flex-column">
-              <img src="assets/img/Santander.jpeg" class="card-img-top" alt="GlutenZero en el programa Santander X Explorer" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column flex-grow-1">
-                <h5 class="card-title">GlutenZero compitiendo en toda España y Latinoamérica como StartUp pionera en el mundo sin gluten.</h5>
-                <p class="card-text flex-grow-1">Un artículo en donde GlutenZero es catalogado como uno de los finalistas del programa.</p>
-                <a href="https://parquecientificoumh.es/noticias/arranca-la-novena-edicion-del-programa-santander-x-explorer-con-una-veintena-de-proyectos" class="btn btn-primary mt-auto" target="_blank">Leer más</a>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card shadow-sm h-100 d-flex flex-column">
-              <img src="assets/img/CaixaBank_TalentoJoven.jpeg" class="card-img-top" alt="CaixaBank y TalentoJoven con Levante EMV" style="height: 200px; object-fit: cover;">
-              <div class="card-body d-flex flex-column flex-grow-1">
-                <h5 class="card-title">GlutenZero como finalista de los premios CaixaBank y TalentoJoven</h5>
-                <p class="card-text flex-grow-1">Artículo del periódico de Levante EMV con los finalistas de la categoría Empresa de los premios CaixaBank y TalentoJoven.</p>
-                <a href="https://www.levante-emv.com/comunitat-valenciana/2025/02/19/premios-talento-joven-finalistas-empresa-114417029.html" class="btn btn-primary mt-auto" target="_blank">Leer más</a>
-              </div>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    
-   
-    <section id="about" class="about section">
-
-      
-      <div class="container section-title" data-aos="fade-up">
-        <p><span>Restaurantes asociados</span></p>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/socios.png" class="img-fluid mb-4" alt="">
-          </div>
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-               El proyecto ha sido presentado a unos pocos locales, los cuales mostraron cierto interés en formar parte del proyecto.
-              </p>
-              <p>Los locales afiliados se comprometen a:</p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Disponer de formación sobre la celiaquía así como sobre la contaminación cruzada.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Disponer de recursos y material suficiente para evitar la contaminación cruzada y ofrecer un buen servicio.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ser totalmente transparentes sobre los ingredientes que usan en sus menús sin gluten.</span></li>
-              </ul>
-              <p>
-                De esta forma se podrá conseguir ampliar el abanico de menús sin gluten en todos los restaurantes afiliados al proyecto, así como una increíble experiencia gastronómica para el cliente, ya que nos centramos en mejorar la calidad de los productos sin gluten, y además ponerlas al alcance de cualquier cliente.
-              </p>
-            </div>
-            <br /><br />
-          </div>
-        </div>
-
-      </div>
-
-    </section> 
-    <section id="encuesta" class="testimonials section light-background">
-
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2>ENCUESTADOS</h2>
-        <p>¿Qué piensan <span class="description-title">de nosotros?</span></p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Es una aplicación que necesitamos con urgencia. Podré salir con mi familia con toda la tranquilidad de que no haya contaminación cruzada.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Encuestado</h3>
-                      <h4>Celíaco</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/male-removebg-preview.png" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Siempre me ha sido muy dificil encontrar restaurantes que ofrezcan una amplia variedad de menús sin gluten, solo tienen uno o dos menús como mucho. Este proyecto solucionaría mi problema definitivamente.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Encuestada</h3>
-                      <h4>Celíaca</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/female-removebg-preview.png" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Nunca puedo ir a ningún sitio a comer con mis amigos o familia por ser celíaca, pero con este proyecto podré no solo encontrar restaurantes sin gluten, sino que también podré comprar de forma online muchos productos para que no haya contaminzación cruzada en casa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Encuestada</h3>
-                      <h4>Celíaca</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/female-removebg-preview.png" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="row gy-4 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="testimonial-content">
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>¡Por fín podré comprar desde casa los mismos productos sin gluten que usan en los restaurantes! Podré elaborar recetas sin gluten de calidad y riquísimas.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <h3>Encuestado</h3>
-                      <h4>Celíaco</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/male-removebg-preview.png" class="img-fluid testimonial-img" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-          <br />
-        </div>
-        <br />
-        <p class="text-center">Si desea contribuir rellenando la siguiente <a href="https://forms.gle/qHaRURnR221PFQvT7">encuesta</a> ayuda mucho al desarrollo del proyecto.</p>
-      </div>
-
-    </section>
-
-
-    
-    <section id="contact" class="book-a-table section">
-  <div class="container section-title" data-aos="fade-up">
-    <p><span>Apúntate a nuestra</span> <span class="description-title">lista de interesados<br></span></p>
+<!-- NAVBAR -->
+<header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-3">
+      <img src="assets/img/GlutenZero_noSlogan.jpg" alt="GlutenZero" class="h-8 w-auto object-contain" loading="lazy"/>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-800">
+      <a href="#hero" class="nav-link hover:text-primary transition-colors">Sobre el proyecto</a>
+      <a href="#features" class="nav-link hover:text-primary transition-colors">Beneficios</a>
+      <a href="#restaurants" class="nav-link hover:text-primary transition-colors">Restaurantes</a>
+      <a href="#news" class="nav-link hover:text-primary transition-colors">Noticias</a>
+    </nav>
+    <a href="#cta" class="hidden md:inline-flex items-center rounded-full bg-primary px-5 py-2 text-white text-sm font-semibold shadow-sm hover:bg-secondary transition-colors">Apúntate a la lista</a>
   </div>
-  <div class="container">
-    <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
-      <div class="col-lg-4 col-md-12 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
-      <div class="col-lg-8 col-md-12 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
-        <div class="container section-title" data-aos="fade-up">
-          <p>Envíanos un correo indicándonos:</p>
-          Nombre y Apellidos<p></p>
-          Número de teléfono o correo<p></p>
-          <p>a <span class="description-title">glutenzero.es@gmail.com</span></p>
-        </div>
+</header>
+
+<!-- INDEX -->
+<section id="hero" class="pt-28 pb-32 bg-gradient-to-b from-green-50 to-white">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <div class="fade-up show">
+      <span class="inline-block mb-4 rounded-full bg-green-100 px-4 py-1 text-sm font-semibold text-secondary">Plataforma para celíacos</span>
+      <h1 class="text-5xl md:text-6xl font-black leading-tight text-dark mb-6">
+        Comer sin gluten<br />con total <span class="text-primary">tranquilidad</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-8 max-w-xl">
+        GlutenZero conecta a personas celíacas con restaurantes verificados, menús transparentes y productos sin gluten, todo en un solo lugar.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#cta" class="rounded-full bg-primary px-8 py-4 text-white font-bold shadow-lg hover:bg-secondary transition">Apúntate</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFzacY2vZIntpN6X-dyDj22oPyUUgJPnVDV9EKihqBU50GDA/viewform?usp=header" target="_blank" class="rounded-full border px-8 py-4 font-semibold hover:bg-slate-100 transition">Encuesta previa</a>
       </div>
     </div>
-  <br /><br />
-    <div class="row promote-section d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-      
-      <div class="col-lg-6 col-md-12 mb-4">
-        <div class="card shadow-lg h-100">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <h3 class="card-title mb-4 text-primary text-center fw-bold">¿Quieres recomendar a tu restaurante favorito?</h3>
-            <img src="assets/img/prom.png" alt="Recomendar Restaurante" class="img-fluid mb-4 rounded-circle" style="max-width: 250px;">
-            <p class="text-muted text-center fs-5">
-              Si deseas que tu restaurante sea destacado en nuestra plataforma, <strong>escríbenos</strong> a 
-              <a href="mailto:glutenzero.es@gmail.com" class="text-primary text-decoration-none">glutenzero.es@gmail.com</a> 
-              indicando los siguientes detalles:
-            </p>
-            <ul class="list-unstyled text-start fs-6">
-              <li class="mb-2">
-                <i class="bi bi-shop text-primary me-2"></i><strong>Nombre del restaurante</strong>
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-geo-alt text-primary me-2"></i><strong>Ubicación</strong>
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-info-circle text-primary me-2"></i><strong>Descripción breve</strong>
-              </li>
-              <li>
-                <i class="bi bi-telephone text-primary me-2"></i><strong>Contacto (teléfono o correo)</strong>
-              </li>
-            </ul>
-          </div>
+    <div class="relative flex items-center justify-center h-full fade-up show">
+      <div class="bg-black p-4 rounded-[3rem] shadow-2xl h-[420px] sm:h-[460px] md:h-[500px] lg:h-[540px]">
+        <video class="h-full w-auto rounded-[2.5rem]" autoplay loop muted playsinline>
+          <source src="assets/img/Video_Prototipo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES / BENEFICIOS -->
+<section id="features" class="py-24 bg-lightgray">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-4xl font-extrabold text-dark mb-16 fade-up show">Diseñada pensando en ti</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="rounded-3xl bg-white p-8 shadow hover:shadow-xl transition transform hover:scale-105 fade-up show">
+        <i class="bi bi-geo-alt text-primary text-4xl"></i>
+        <h3 class="mt-6 text-xl font-bold">Geolocalización segura</h3>
+        <p class="mt-3 text-slate-600">Encuentra restaurantes aptos cerca de ti, filtrados y verificados.</p>
+      </div>
+      <div class="rounded-3xl bg-white p-8 shadow hover:shadow-xl transition transform hover:scale-105 fade-up show">
+        <i class="bi bi-journal-text text-primary text-4xl"></i>
+        <h3 class="mt-6 text-xl font-bold">Menús transparentes</h3>
+        <p class="mt-3 text-slate-600">Ingredientes detallados, alérgenos claros y confianza real.</p>
+      </div>
+      <div class="rounded-3xl bg-white p-8 shadow hover:shadow-xl transition transform hover:scale-105 fade-up show">
+        <i class="bi bi-bag-check text-primary text-4xl"></i>
+        <h3 class="mt-6 text-xl font-bold">Compra sin riesgos</h3>
+        <p class="mt-3 text-slate-600">Productos sin gluten usados por restaurantes, directo a tu casa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANTES -->
+<section id="restaurants" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-4xl font-extrabold text-dark mb-16">Confianza, no promesas</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="space-y-6">
+        <p class="text-lg text-slate-700">
+          Todos nuestros restaurantes asociados pasan por un riguroso proceso de verificación. Esto incluye formación en celiaquía, prevención de contaminación cruzada y control de proveedores.
+        </p>
+        <ul class="space-y-4 text-lg">
+          <li class="flex gap-3"><i class="bi bi-check-circle-fill text-primary"></i> Formación en celiaquía para todo el personal.</li>
+          <li class="flex gap-3"><i class="bi bi-check-circle-fill text-primary"></i> Procedimientos de seguridad y prevención de contaminación cruzada.</li>
+          <li class="flex gap-3"><i class="bi bi-check-circle-fill text-primary"></i> Transparencia total: menús transparentes e ingredientes accesibles para usuarios.</li>
+        </ul>
+        <p class="text-lg text-slate-700">
+          Gracias a estas medidas, nuestros usuarios disfrutan de una experiencia segura, y los restaurantes pueden ampliar su clientela celíaca con confianza.
+        </p>
+      </div>
+      <div>
+        <img src="assets/img/socios.png" class="rounded-3xl shadow-lg" alt="Restaurantes asociados">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- NEWS / MEDIA -->
+<section id="news" class="py-24 bg-lightgray">
+  <div class="max-w-7xl mx-auto px-6 fade-up show">
+    <h2 class="text-center text-4xl font-extrabold text-dark mb-16">GlutenZero en los medios</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- CARD 1 -->
+      <div class="rounded-3xl border overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition transform hover:scale-105">
+        <img src="assets/img/Maraton.png" alt="GlutenZero en la maratón de startups de la UMH" class="h-48 w-full object-cover">
+        <div class="p-6 flex flex-col flex-grow">
+          <h5 class="text-lg font-semibold mb-2">GlutenZero: Los comienzos de una start up alicantina que busca proporcionar alternativas sin gluten.</h5>
+          <p class="text-slate-600 flex-grow mb-4">Un artículo en el que se menciona cómo GlutenZero llegó a ser una startup finalista de entre más de 60 proyectos en la competición de la Universidad Miguel Hernández (Elche).</p>
+          <a href="https://comunicacion.umh.es/2024/01/26/ganadores-de-la-primera-fase-de-la-13a-maraton-de-creacion-de-start-ups-umh/" target="_blank" class="mt-auto inline-block rounded-full bg-primary px-6 py-2 text-white font-semibold text-center hover:bg-secondary transition">Leer más</a>
         </div>
       </div>
 
-      
-      <div class="col-lg-6 col-md-12 mb-4">
-        <div class="card shadow-lg h-100">
-          <div class="card-body d-flex flex-column align-items-center justify-content-center">
-            <h3 class="card-title mb-4 text-success text-center fw-bold">¿Eres un restaurante y quieres unirte?</h3>
-            <img src="assets/img/rest.png" alt="Unirse como Restaurante" class="img-fluid mb-4 rounded-circle" style="max-width: 250px;">
-            <p class="text-muted text-center fs-5">
-              <strong>Únete a nuestra plataforma</strong> y conecta con clientes que buscan opciones sin gluten. <strong>Escríbenos</strong> a 
-              <a href="mailto:glutenzero.es@gmail.com" class="text-success text-decoration-none">glutenzero.es@gmail.com</a> 
-              indicando los siguientes detalles:
-            </p>
-            <ul class="list-unstyled text-start fs-6">
-              <li class="mb-2">
-                <i class="bi bi-shop text-success me-2"></i><strong>Nombre del restaurante</strong>
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-geo-alt text-success me-2"></i><strong>Ubicación</strong>
-              </li>
-              <li class="mb-2">
-                <i class="bi bi-info-circle text-success me-2"></i><strong>Descripción breve</strong>
-              </li>
-              <li>
-                <i class="bi bi-telephone text-success me-2"></i><strong>Contacto (teléfono o correo)</strong>
-              </li>
-            </ul>
-          </div>
+      <!-- CARD 2 -->
+      <div class="rounded-3xl border overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition transform hover:scale-105">
+        <img src="assets/img/Santander.jpeg" alt="GlutenZero en el programa Santander X Explorer" class="h-48 w-full object-cover">
+        <div class="p-6 flex flex-col flex-grow">
+          <h5 class="text-lg font-semibold mb-2">GlutenZero compitiendo en toda España y Latinoamérica como StartUp pionera en el mundo sin gluten.</h5>
+          <p class="text-slate-600 flex-grow mb-4">Un artículo en donde GlutenZero es catalogado como uno de los finalistas del programa Santander X Explorer.</p>
+          <a href="https://parquecientificoumh.es/noticias/arranca-la-novena-edicion-del-programa-santander-x-explorer-con-una-veintena-de-proyectos" target="_blank" class="mt-auto inline-block rounded-full bg-primary px-6 py-2 text-white font-semibold text-center hover:bg-secondary transition">Leer más</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="rounded-3xl border overflow-hidden shadow-lg flex flex-col hover:shadow-xl transition transform hover:scale-105">
+        <img src="assets/img/CaixaBank_TalentoJoven.jpeg" alt="CaixaBank y TalentoJoven con Levante EMV" class="h-48 w-full object-cover">
+        <div class="p-6 flex flex-col flex-grow">
+          <h5 class="text-lg font-semibold mb-2">GlutenZero como finalista de los premios CaixaBank y TalentoJoven</h5>
+          <p class="text-slate-600 flex-grow mb-4">Artículo del periódico de Levante EMV con los finalistas de la categoría Empresa de los premios CaixaBank y TalentoJoven.</p>
+          <a href="https://www.levante-emv.com/comunitat-valenciana/2025/02/19/premios-talento-joven-finalistas-empresa-114417029.html" target="_blank" class="mt-auto inline-block rounded-full bg-primary px-6 py-2 text-white font-semibold text-center hover:bg-secondary transition">Leer más</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  
-    <section id="contact" class="contact section">
+<!-- CTA FINAL -->
+<!-- FORMULARIO DE INSCRIPCIÓN -->
+<section id="cta" class="py-32 bg-gradient-to-b from-green-50 to-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-dark text-center mb-6">Únete a GlutenZero</h2>
+    <p class="text-lg text-slate-600 text-center mb-12">
+      Apúntate a la lista de interesados, recomiéndanos un restaurante o inscríbete como restaurante si quieres formar parte del proyecto.
+    </p>
 
-      
-      <div class="container section-title" data-aos="fade-up">
-        <p><span>¿Necesitas ayuda?</span> <span class="description-title">Contáctanos</span></p>
-      </div>
-
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          
-          <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-light">
-              <div class="card-body">
-                <h5 class="card-title text-center">Contacto</h5>
-                <div class="d-flex flex-column align-items-center">
-                  
-                  <div class="mb-3 w-100 text-center">
-                    <strong>Email:</strong> <span>glutenzero.es@gmail.com</span>
-                  </div>
-                  
-                  <div class="w-100 text-center">
-                    <a href="https://www.instagram.com/glutenzero.es/" target="_blank" class="btn btn-outline-dark d-flex align-items-center justify-content-center">
-                      <i class="bi bi-instagram mr-2"></i> &nbsp;&nbsp;Síguenos en Instagram
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="bg-white rounded-3xl shadow-xl p-10 md:p-16">
+      <form id="glutenzero-form" action="https://formspree.io/f/mlgredey" method="POST" class="space-y-6">
+        
+        <!-- Tipo de usuario -->
+        <div>
+          <label class="block font-semibold mb-2">¿Quién eres?</label>
+          <select name="tipo" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="usuario">Usuario interesado</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="recomendacion">Recomendar restaurante</option>
+          </select>
         </div>
-      </div>
-      
 
-    </section>
+        <!-- Campos dinámicos -->
+        <div id="dynamic-fields" class="space-y-4"></div>
 
-  </main>
+        <!-- Botón enviar -->
+        <button type="submit" class="w-full bg-primary text-white font-bold py-4 rounded-full hover:bg-secondary transition-colors">
+          Enviar
+        </button>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">GlutenZero</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-      </div>
+        <!-- Mensaje de éxito -->
+        <p id="success-msg" class="text-green-600 text-center hidden mt-4">
+          ¡Gracias por unirte a GlutenZero! Te contactaremos pronto.
+        </p>
+      </form>
     </div>
+  </div>
+</section>
 
-  </footer>
-
-  
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  
-  <div id="preloader"></div>
-
- 
-  <style>
-    .image-slider {
-      position: relative;
-      height: 100%;
-    }
-  
-    .image-slider img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      width: 100%;
-      animation: float 3s ease-in-out infinite;
-    }
-  
-    .hero-img .image-slider img {
-      max-height: 450px;
-      height: auto;
-      width: auto;
-    }
-  
-    .image-slider img.active {
-      opacity: 1;
-      z-index: 1;
-    }
-  
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-  
-    /* Móviles */
-    @media (max-width: 767px) {
-      .hero .row {
-        flex-direction: column-reverse;
-      }
-  
-      .hero-img .image-slider {
-        position: relative;
-        height: auto;
-        padding-bottom: 65vw; /* Más pequeño que antes (antes era 70vw) */
-        overflow: visible;
-      }
-  
-      .hero-img .image-slider img {
-        max-height: none;
-        height: auto;
-        width: 80%; /* Más estrecho */
-        margin: 0 auto; /* Centrado horizontal */
-        object-fit: contain;
-      }
-    }
-  </style>
-  
-
+<!-- Script dinámico -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".image-slider img");
-    let currentSlide = 0;
+  const tipoSelect = document.querySelector('select[name="tipo"]');
+  const dynamicFields = document.getElementById('dynamic-fields');
+  const form = document.getElementById('glutenzero-form');
+  const successMsg = document.getElementById('success-msg');
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-        if (i === index) {
-          slide.classList.add("active");
-        }
-      });
+  tipoSelect.addEventListener('change', () => {
+    dynamicFields.innerHTML = ''; // limpiar campos previos
+    if(tipoSelect.value === 'usuario') {
+      dynamicFields.innerHTML = `
+        <input type="text" name="nombre" placeholder="Nombre completo" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="email" name="email" placeholder="Correo electrónico" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="tel" name="telefono" placeholder="Teléfono" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="text" name="localidad" placeholder="Localidad" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+      `;
+    } else if(tipoSelect.value === 'restaurante') {
+      dynamicFields.innerHTML = `
+        <input type="text" name="nombre_restaurante" placeholder="Nombre del restaurante" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="text" name="representante" placeholder="Nombre del representante" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="tel" name="telefono" placeholder="Teléfono de contacto" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="text" name="localidad" placeholder="Localidad" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+      `;
+    } else if(tipoSelect.value === 'recomendacion') {
+      dynamicFields.innerHTML = `
+        <input type="text" name="nombre_restaurante" placeholder="Nombre del restaurante a recomendar" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="text" name="recomendador" placeholder="Tu nombre completo" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+        <input type="email" name="email" placeholder="Correo electrónico del restaurante" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:outline-none">
+      `;
     }
+  });
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
+  // Envío dinámico a Formspree con mensaje
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.reset();
+      dynamicFields.innerHTML = '';
+      successMsg.classList.remove('hidden');
+      setTimeout(() => successMsg.classList.add('hidden'), 7000);
+    } else {
+      alert('Hubo un error al enviar el formulario. Intenta nuevamente.');
     }
-
-    showSlide(currentSlide); 
-    setInterval(nextSlide, 4000);
   });
 </script>
 
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  
-  <script src="assets/js/main.js"></script>
+<!-- CONTACTO -->
+<section id="contact" class="py-32 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up">
+    <p class="text-xl mb-4">
+      <span class="font-semibold text-primary">¿Necesitas ayuda?</span>
+      <span class="block text-3xl font-extrabold text-dark mt-2">Contáctanos</span>
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 mt-12" data-aos="fade-up">
+    <div class="grid md:grid-cols-2 justify-items-center gap-8">
+      
+      <!-- Tarjeta de contacto -->
+      <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 w-full max-w-md">
+        <h5 class="text-2xl font-bold text-center mb-6">Contacto</h5>
+        <div class="flex flex-col items-center gap-6">
+          
+          <div class="text-center">
+            <p class="text-lg font-medium"><strong>Email:</strong> <span class="text-slate-700">glutenzero.es@gmail.com</span></p>
+          </div>
+
+          <a href="https://www.instagram.com/glutenzero.es/" target="_blank"
+             class="inline-flex items-center gap-3 justify-center border border-gray-300 rounded-full px-6 py-3 text-dark font-semibold hover:bg-primary hover:text-white transition-colors">
+            <i class="bi bi-instagram text-xl"></i> Síguenos en Instagram
+          </a>
+
+        </div>
+      </div>
+
+      
+      <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 w-full max-w-md">
+        <h5 class="text-2xl font-bold text-center mb-6">Encuentra respuestas</h5>
+        <p class="text-slate-600 text-center">Si tienes dudas sobre el proyecto o quieres unirte a GlutenZero, puedes enviarnos un correo, seguirnos en redes o utilizar nuestro formulario de inscripción.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 bg-dark text-white text-center">
+  <div class="max-w-7xl mx-auto px-6 space-y-2">
+    <p>© <span>GlutenZero</span> · Todos los derechos reservados</p>
+    <p>Desarrollado con ❤️ y pensado para celíacos</p>
+  </div>
+</footer>
+
+<!-- AOS Animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+<!-- Scripts -->
+<script>
+  // Fade-up scroll animation
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeEls = document.querySelectorAll('.fade-up');
+    fadeEls.forEach(el => el.classList.add('show'));
+
+    // Navbar scrollspy
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('text-primary', 'font-bold');
+        if (link.getAttribute('href') === '#' + current) link.classList.add('text-primary', 'font-bold');
+      });
+    });
+  });
+</script>
 
 </body>
-
 </html>
